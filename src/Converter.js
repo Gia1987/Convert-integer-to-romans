@@ -8,8 +8,7 @@ function Converter(){
 Converter.prototype.convert = function(num){
   var res = ''
   this.ROMANS.forEach(item =>{
-    while(num >= item.value){
-      res += item.numeral
+    for(; num >= item.value; res += item.numeral){
       num -= item.value
     }
   })
