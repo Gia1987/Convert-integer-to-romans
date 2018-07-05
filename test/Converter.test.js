@@ -37,4 +37,7 @@ describe('Converter', function(){
   it('returns C for 100', function(){
     expect(converter.convert(100)).to.eql("C")
   });
+  it('returns CD for 400', function(){
+    expect(converter.convert(400)).to.eql("CD")
+  });
 });
