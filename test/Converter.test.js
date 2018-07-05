@@ -43,4 +43,7 @@ describe('Converter', function(){
   it('returns D for 500', function(){
     expect(converter.convert(500)).to.eql("D")
   });
+  it('returns CM for 900', function(){
+    expect(converter.convert(900)).to.eql("CM")
+  });
 });
