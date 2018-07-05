@@ -1,13 +1,19 @@
 function Converter(){
-
+  this.ROMANS = [
+                {value: 4, numeral: 'IV'},
+                {value: 1, numeral: 'I'}
+              ]
 }
 
 Converter.prototype.convert = function(num){
   var res = ''
-  while(num > 0){
-    res += 'I'
-    num --
-  }
+  this.ROMANS.forEach(item =>{
+    while(num >= item.value){
+      res += item.numeral
+      num -= item.value
+    }
+  })
+
   return res;
 }
 
