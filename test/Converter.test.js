@@ -49,4 +49,8 @@ describe('Converter', function(){
   it('returns M for 1000', function(){
     expect(converter.convert(1000)).to.eql("M")
   });
+  // let's test a number that takes all of the possible letters
+  it('returns MMMDCLXXVIII for 3678', function(){
+    expect(converter.convert(3678)).to.eql("MMMDCLXXVIII")
+  });
 });
