@@ -1,5 +1,6 @@
 function Converter(){
   this.ROMANS = [
+    {value: 90, numeral: 'XC'},
     {value: 50, numeral: 'L'},
     {value: 40, numeral: 'XL'},
     {value: 10, numeral: 'X'},
