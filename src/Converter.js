@@ -5,6 +5,8 @@ function Converter(){
 Converter.prototype.convert = function(num){
   if(num === 2){
     return 'II'
+  }else if (num === 3) {
+    return 'III'
   }
   return 'I'
 }
