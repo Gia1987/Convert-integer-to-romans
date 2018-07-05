@@ -19,4 +19,7 @@ describe('Converter', function(){
   it('returns V for 5', function(){
     expect(converter.convert(5)).to.eql("V")
   });
+  it('returns IX for 9', function(){
+    expect(converter.convert(9)).to.eql("IX")
+  });
 });
