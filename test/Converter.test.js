@@ -13,4 +13,7 @@ describe('Converter', function(){
   it('returns III for 3', function(){
     expect(converter.convert(3)).to.eql("III")
   });
+  it('returns IV for 4', function(){
+    expect(converter.convert(4)).to.eql("IV")
+  });
 });
