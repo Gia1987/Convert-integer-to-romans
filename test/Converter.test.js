@@ -34,4 +34,7 @@ describe('Converter', function(){
   it('returns XC for 90', function(){
     expect(converter.convert(90)).to.eql("XC")
   });
+  it('returns C for 100', function(){
+    expect(converter.convert(100)).to.eql("C")
+  });
 });
