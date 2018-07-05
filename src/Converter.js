@@ -3,14 +3,12 @@ function Converter(){
 }
 
 Converter.prototype.convert = function(num){
-  if(num === 2){
-    return 'II'
-  }else if (num === 3) {
-    return 'III'
+  var res = ''
+  while(num > 0){
+    res += 'I'
+    num --
   }
-  return 'I'
+  return res;
 }
 
 module.exports = Converter;
-// var romans = new Romans()
-// romans.convertToRomans(2648)
