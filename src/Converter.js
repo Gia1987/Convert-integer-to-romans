@@ -1,8 +1,9 @@
 function Converter(){
   this.ROMANS = [
-                {value: 4, numeral: 'IV'},
-                {value: 1, numeral: 'I'}
-              ]
+    {value: 5, numeral: 'V'},
+    {value: 4, numeral: 'IV'},
+    {value: 1, numeral: 'I'}
+    ]
 }
 
 Converter.prototype.convert = function(num){
@@ -12,7 +13,6 @@ Converter.prototype.convert = function(num){
       num -= item.value
     }
   })
-
   return res;
 }
 
